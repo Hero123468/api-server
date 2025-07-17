@@ -1,32 +1,38 @@
 {
-  "name": "api-server",
-  "version": "1.0.0",
-  "description": "contains product",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hero123468/api-server.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hero123468/api-server/issues"
-  },
-  "homepage": "https://github.com/Hero123468/api-server#readme",
-  "dependencies": {
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.0.10",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
-  }
+    "name": "api-server",
+    "version": "1.0.0",
+    "description": "contains product",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "compose": "tsc && node dist/index.js",
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hero123468/api-server.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hero123468/api-server/issues"
+    },
+    "homepage": "https://github.com/Hero123468/api-server#readme",
+    "dependencies": {
+        "express": "^5.1.0",
+        "mongoose": "^8.16.4",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.3",
+        "@types/mongoose": "^5.11.96",
+        "@types/node": "^24.0.10",
+        "@types/uuid": "^10.0.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.8.3"
+    }
 }
